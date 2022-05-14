@@ -1,0 +1,36 @@
+.navbar{
+  height: 7vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+    /* justify-content: center;
+    text-decoration: none;
+    background: #b30d0d;
+    color: white; */
+}
+.home {
+  background-image: url('./img/wal1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 93vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home h1 {
+  /* display: block; */
+  font-family: 'Lora', serif;
+  color: #c8c829;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.intro-slide {
+  color: #b6f0d8;
+  font-size: 2rem;
+  padding: 2rem;
+}
