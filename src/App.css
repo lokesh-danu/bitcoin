@@ -1,19 +1,18 @@
-.navbar{
-  height: 7vh;
+.navbar {
+  height: 8vh;
   width: 100vw;
   display: flex;
   align-items: center;
-    /* justify-content: center;
-    text-decoration: none;
-    background: #b30d0d;
-    color: white; */
+  justify-content: space-around;
+  background-color: black;
 }
+
 .home {
   background-image: url('./img/wal1.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 93vh;
+  height: 92vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -33,4 +32,96 @@
   color: #b6f0d8;
   font-size: 2rem;
   padding: 2rem;
+}
+
+.logo {
+  height: 9vh;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItem {
+
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  font-style: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navRight {}
+
+.navRight button {
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 24px;
+  background-color: gold;
+  font-family: 'roboto';
+}
+
+.currencyCalculator {
+  background: url('./img/bitcoin.jpg');
+}
+
+.currencyCalculator {
+  background: url(http://localhost:3000/static/media/bitcoin.3760ebef62dd6ae7b8aa.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 92vh;
+  width: 100 vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  /* padding-right: 5vw; */
+}
+
+.calculatorHeader {
+  padding-right: 5rem;
+}
+
+.calculatorHeader h1 {
+
+  font-family: 'Lora', serif;
+  font-size: 3.5rem;
+  text-align: center;
+  color: chartreuse;
+}
+
+.calculatorHeader span {
+  font-family: 'Indie Flower', cursive;
+  font-size: 3rem;
+  color: blanchedalmond;
+}
+
+.searchbar {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.searchbarItem {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 0.5rem 1.5rem;
+  border-radius: 13px;
+  margin: 2rem 0.2rem;
+}
+
+.btn.searchbarItem {
+  background-color: red;
+  color: antiquewhite;
+  border: 2px solid red;
+}
+#bitcoinValue {
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2rem;
+  color: white;
 }

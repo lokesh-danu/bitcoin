@@ -51,34 +51,39 @@ const Calculator = () => {
     }
     return (
         <div className="currencyCalculator">
-            <h1>calculator</h1>
-            {!ispending &&
-                <div className="calculator">
-                    <div className="searchbar">
-                        <select name="currency" id="" onChange={(e) => {
-                            const cur=e.target.value
-                            {console.log(`cur is ${cur}`)}
-                            setCurrency(cur);
-                        }} >
-                            {
-                                total.map(item => {
-                                    return (
-                                        <option value={ item }> ${item} </option>
-                                    )
-                                })
-                            }
-                        </select>
-                        <input className="input" type="text"
-                            value={amount}
-                            onChange={e => { setAmount(e.target.value) }}
-                        />
-                        {ispending && <button disabled className="btn">Searching..</button>}
-                        {!ispending && <button className="btn" onClick={search}>Search</button>}
+            <div className="calculatorHeader">
+                <h1>Bit Coin Calculator</h1>
+                <span>Know how much you own in bitcoins</span>
+                {!ispending &&
+                    <div className="calculator">
+                        <div className="searchbar">
+                            <select className="searchbarItem" name="currency" id="" onChange={(e) => {
+                                const cur = e.target.value
+                                // { console.log(`cur is ${cur}`) }
+                                setCurrency(cur);
+                            }} >
+                                {
+                                    total.map(item => {
+                                        return (
+                                            <option value={item}> ${item} </option>
+                                        )
+                                    })
+                                }
+                            </select>
+                            <input className="input searchbarItem" type="text"
+                                value={amount}
+                                onChange={e => { setAmount(e.target.value) }}
+                            />
+                            {ispending && <button disabled className="btn searchbarItem">Searching..</button>}
+                            {!ispending && <button className="btn searchbarItem" onClick={search}>Search</button>}
+                        </div>
                     </div>
-                    {error && <div className="error"><h1>Invalid Name</h1></div>}
-                    {data && <h1> ${data}</h1>}
+                }
+                {data && <div id="bitcoinValue"> You Got <br /> ${data}  <br /> Bitcoins !
                 </div>
-            }
+                }
+            </div>
+            {error && <div className="error"><h1>Error Occured Please Try again later</h1></div>}
         </div>
     );
 }
