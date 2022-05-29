@@ -62,12 +62,9 @@
   font-family: 'roboto';
 }
 
-.currencyCalculator {
-  background: url('./img/bitcoin.jpg');
-}
 
 .currencyCalculator {
-  background: url(http://localhost:3000/static/media/bitcoin.3760ebef62dd6ae7b8aa.jpg);
+  background: url('./img/bitcoin.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
